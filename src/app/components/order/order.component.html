@@ -1,0 +1,44 @@
+<section>
+  <div class="section-three">
+      <div>
+          <div class="section-three-header">
+              <h2 class="section-three-header-text font-extra-bold font-orng">Хватит думать! <span class="section-span font-brwn">Доставим заказ за 30 минут!</span></h2>
+          </div>
+          <div class="section-three-desc">
+              <p class="section-three-desc-text font-reg">Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
+          </div>
+      </div>
+      <div>
+          <form id="order-form" class="order-form" (ngSubmit)="submitOrder(order)">
+              <div >
+                <input class="order-block" type="text" id="name" name="name" placeholder="Ваше имя" required onkeypress="return event.charCode != 46;" pattern="[а-яА-ЯёЁa-zA-Z]+" [(ngModel)]="order.name" #name = "ngModel">
+                <div [hidden]="name.valid || name.untouched">
+                  Некорректное имя
+                </div>
+              </div>
+              <div>
+                <input class="order-block" type="text" id="address" name="address"  placeholder="Адрес доставки" [(ngModel)]="order.address" required #address ="ngModel">
+                <div [hidden]="address.valid || address.untouched">
+                  Некорректный адрес
+                </div>
+              </div>
+              <div>
+                <input class="order-block" type="tel" id="phone" name="phone"  placeholder="Телефон" [(ngModel)]="order.phone" required pattern="[0-9+]+" #phone ="ngModel">
+                <div [hidden]="phone.valid || phone.untouched">
+                  Некорректный адрес
+                </div>
+              </div>
+              <button class="order-block bckgr-orng font-dark font-bold order-button" type="submit" id="submit-btn" [disabled]="name.invalid || address.invalid || phone.invalid" >Оформить заказ</button>
+            </form>
+            <div id="popup" class="popup" *ngIf="isSubmit">
+              <div class="popup-content">
+                <h2>Спасибо за заказ!</h2>
+                <button id="close-btn" (click)="close()">Закрыть</button>
+              </div>
+            </div>
+      </div>
+      <div >
+          <img src="../../../assets/img/section3-pizza.jpg" alt="" class="img-pizza img-right">
+      </div>
+  </div>
+</section>

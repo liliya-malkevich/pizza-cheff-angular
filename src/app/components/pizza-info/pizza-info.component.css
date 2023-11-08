@@ -1,0 +1,49 @@
+.section-one {
+  margin-top: 125px;
+  display: flex;
+}
+
+.section-column {
+  display: flex;
+}
+
+.section-row {
+  margin-top: 40px;
+  display: flex;
+  width: 340px;
+}
+
+.section-one-header{
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.section-row-header{
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.section-row-text{
+  line-height: 16px;
+}
+
+.section-row-desc {
+  margin-left: 10px;
+  width: 230px;
+}
+
+.button-choose{
+  width: 224px;
+  height: 60px;
+  border: none;
+}
+
+.section-one-button{
+  margin-top: 60px;
+}
+
+.section-one-photo{
+  margin-top: 50px;
+}

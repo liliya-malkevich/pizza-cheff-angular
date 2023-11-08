@@ -1,0 +1,57 @@
+.section-two-header{
+  font-size: 35px;
+  text-align: center;
+}
+
+.section-two {
+  margin-top: 150px;
+}
+
+.card-pizza{
+  width: 282px;
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 7.5px rgba(152,152,152,0.2);
+}
+
+.card-pizza-header{
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.card-pizza-text{
+  width: 242px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #181a1a;
+  text-align: center;
+}
+
+.card-pizza-button{
+  width: 242px;
+  height: 50px;
+  border: none;
+  margin-top: 25px;
+}
+
+.section-cards {
+  margin-top: 50px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.three-card-m{
+  margin-top: 10px;
+}
+
+.section-cards-column{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

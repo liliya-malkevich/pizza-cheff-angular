@@ -1,0 +1,74 @@
+.section-three-header-text{
+  width: 409px;
+font-size: 35px;
+line-height: 45px;
+}
+
+.section-three {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-three-desc-text{
+  width: 384px;
+font-size: 16px;
+line-height: 24px;
+color: #b99150;
+}
+
+.section-three-desc{
+  margin-top: 62px;
+}
+
+.order-block{
+  width: 330px;
+  height: 60px;
+  margin-top:25px ;
+  border: 1px solid #b99150;
+  font-size: 22px;
+}
+
+.order-block::placeholder{
+  font-size: 18px;
+  line-height: 45px;
+  color: #cba86e;
+  font-family: "Muller Regular";
+  vertical-align: middle;
+  padding: 5px 30px;
+}
+
+.order-form {
+  height: 320px;
+}
+
+
+.popup {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#close-btn {
+  margin-top: 10px;
+}
+
+.order-button:disabled {
+  background-color: #dac29da4;
+}
+
